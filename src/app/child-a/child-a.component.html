@@ -1,0 +1,11 @@
+<div>
+  <h3>{{ message }}</h3>
+  <p>child-a works!</p>
+  <div>
+    <div *ngFor="let item of data">
+      <h3>{{ item.title }}</h3>
+      <img alt="img" width="250" height="250" src="{{ item.urlToImage }}" />
+      <p>{{ item.description }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div *ngIf="newsData != null && parentMessage != null">
+  <app-child-a [data]="newsData" [message]="parentMessage">
+
+  </app-child-a>
+</div>
+<div *ngIf="newsData === null">
+  <span>Loading....</span>
+</div>
